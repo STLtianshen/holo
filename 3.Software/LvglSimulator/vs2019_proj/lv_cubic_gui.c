@@ -33,5 +33,5 @@ void lv_holo_cubic_gui(void)
 	lv_obj_t* label1 = lv_label_create(scr_1, NULL);
  
 	lv_label_set_text_fmt(label1, "CPU Temp: %d C", 0);
-	lv_obj_set_pos(label1, 20, 30);
+	lv_obj_set_pos(label1, 80, 100);
 }

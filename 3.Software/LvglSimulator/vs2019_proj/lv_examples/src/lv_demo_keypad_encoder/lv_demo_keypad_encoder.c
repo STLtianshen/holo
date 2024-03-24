@@ -189,7 +189,8 @@ static void text_input_create(lv_obj_t* parent)
 static void msgbox_create(void)
 {
 	lv_obj_t* mbox = lv_msgbox_create(lv_layer_top(), NULL);
-	lv_msgbox_set_text(mbox, "Welcome to the keyboard and encoder demo");
+	//lv_msgbox_set_text(mbox, "Welcome to the keyboard and encoder demo");
+	lv_msgbox_set_text(mbox, "你好");//为什么不支持中文字符串？
 	lv_obj_set_event_cb(mbox, msgbox_event_cb);
 	lv_group_add_obj(g, mbox);
 	lv_group_focus_obj(mbox);
